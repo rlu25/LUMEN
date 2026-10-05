@@ -1,0 +1,9 @@
+-r requirements.txt
+dm-haiku>=0.0.12
+jax>=0.4
+jaxlib>=0.4
+pandas-plink>=2.2
+pyliftover>=0.4
+pysam>=0.22
+
+# Install Nucleotide Transformer separately and set LUMEN_NT_REPOSITORY.

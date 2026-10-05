@@ -1,0 +1,47 @@
+# Python and environments
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# Logs, caches, and generated figures
+*.log
+nohup.out
+*.png
+*.svg
+.pytest_cache/
+.mypy_cache/
+
+# Model and numerical artifacts are private by default
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.joblib
+*.parquet
+*.h5
+*.hdf5
+.complete
+
+# Controlled participant-level tables and derived outputs
+data_splits/
+data_preparation/labels.csv
+modality_pretraining/genetics/artifacts/
+multimodal_fusion/embeddings/
+multimodal_fusion/subject_embeddings/
+downstream_prediction/runs/
+downstream_prediction/finetuned_runs/
+**/predictions*.csv
+**/manifest*.csv
+**/cohort*.csv
+**/cohort*.json
+
+# Local data; retain only the public CDC reference table
+data/*
+!data/cdc_bmiagerev_lms.csv
+
+# Checkpoints are distributed separately through Google Drive
+.DS_Store
+*.safetensors
+*.onnx
